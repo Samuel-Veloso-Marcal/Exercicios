@@ -41,15 +41,19 @@ public class Client {
 	public void addOrders(int n) {
 		for (int i=1; i<=n; i++) {
 			System.out.printf("Enter #%d item data:%nProduct name: ", i);
+			if(i>1) {
+			sc.nextLine();
+			}
 			String name = sc.nextLine();
 			System.out.printf("Product price: ");
 			double price = sc.nextDouble();
 			System.out.print("Quantity: ");
 			int quantity = sc.nextInt();
-			Order x = new Order(name, price, quantity);
-			this.orders.add(x);
+			System.out.println();
+			this.orders.add(new Order(name, price, quantity));
 		}
 	}
+	
 
 	
 	
