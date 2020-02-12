@@ -1,5 +1,6 @@
 package Enteties;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -53,8 +54,11 @@ public class Client {
 			this.orders.add(new Order(name, price, quantity));
 		}
 	}
+	public String toString() {
+		SimpleDateFormat sdft = new SimpleDateFormat("dd/MM/yyyy");
+		return name + " (" + sdft.format(birth) + ") - " + email;
+	}
 	
-
 	
 	
 	
