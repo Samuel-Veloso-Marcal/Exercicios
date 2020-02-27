@@ -24,4 +24,7 @@ public class CP {
 	public Double imposto() {
 		return null;
 	}
+	public String toString() {
+		return "Error.";
+	}
 }

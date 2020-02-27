@@ -25,4 +25,9 @@ public class CPF extends CP{
 			return getRenda() * 0.25 - abate;
 		}
 	}
+	@Override
+	public final String toString() {
+		return getName() + ", R$ " + getRenda() + " e R$ " + imposto() + " de imposto, com R$" + saude + "gasto em saúde.";
+	}
+	
 }
