@@ -3,8 +3,9 @@ package Entities;
 public class CP {
 	private String name;
 	private double renda;
+	
 	public String getName() {
-		return name;
+		return (String) name;
 	}
 	public void setName(String name) {
 		this.name = name;

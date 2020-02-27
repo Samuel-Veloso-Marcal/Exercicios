@@ -24,6 +24,6 @@ public class CNPJ extends CP{
 	}
 	@Override
 	public final String toString() {
-		return getName() + ", R$ " + getRenda() + " e R$ " + imposto() + " de imposto, com " + funcionarios + "funcionarios.";
+		return getName() + ", R$ " + getRenda() + " e R$ " + imposto() + " de imposto, com " + funcionarios + " funcionarios.";
 }
 }

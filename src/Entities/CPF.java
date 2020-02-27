@@ -19,15 +19,15 @@ public class CPF extends CP{
 	public final Double imposto() {
 		double abate = 0.5 * saude;
 		if (getRenda()<20000) {
-			return getRenda() * 0.15 - abate;
+			return ((getRenda() * 0.15) - abate);
 		}
 		else {
-			return getRenda() * 0.25 - abate;
+			return ((getRenda() * 0.25) - abate);
 		}
 	}
 	@Override
 	public final String toString() {
-		return getName() + ", R$ " + getRenda() + " e R$ " + imposto() + " de imposto, com R$" + saude + "gasto em saúde.";
+		return String.format(getName()) + ", R$ " + getRenda() + " e R$ " + imposto() + " de imposto, com R$" + saude + " gasto em saúde.";
 	}
 	
 }
